@@ -168,10 +168,10 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
       rgb:
-        what: rgb
+        what: WS2812B-2020
         where: true
         adjust:
-          shift: [-1, 4]
+          shift: [0,5.75]
         params:
           din: ""
           dout: ""
