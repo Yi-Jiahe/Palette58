@@ -117,7 +117,7 @@ pcbs:
         outline: board
     footprints:
       nice!nano:
-        what: promicro
+        what: nice!nano_v2
         params:
           orientation: "down"
         where:
