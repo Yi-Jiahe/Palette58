@@ -162,7 +162,7 @@ pcbs:
         what: diode
         where: true
         adjust:
-          shift: [-8.25, 1.5]
+          shift: [8.25, 1.5]
           rotate: -90
         params:
           from: "{{colrow}}"
