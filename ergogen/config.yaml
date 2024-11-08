@@ -149,7 +149,8 @@ pcbs:
           P022: "row_3"
           P024: "row_4"
           P100: "row_5"
-
+          P104: "SCL"
+          P106: "SDA"
         where:
           ref: matrix_inner_num
           shift: [20, -9]
@@ -161,21 +162,8 @@ pcbs:
           shift: [26, -25]
           rotate: -90
         params:
-          SDA: ""
-          SCL: ""
-      trrs:
-        what: trrs
-        adjust:
-          ref: matrix_inner_num
-          shift: [28, -35]
-          rotate: -90
-        params:
-          reverse: true
-          symmetric: true
-          A: ""
-          B: ""
-          C: ""
-          D: ""
+          SDA: "SDA"
+          SCL: "SCL"
       gateron_low_profile_hotswap:
         # Need the right footprints
         # mx has too small stem hole for the low profile switches
