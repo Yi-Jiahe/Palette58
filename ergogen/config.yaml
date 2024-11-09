@@ -144,7 +144,7 @@ pcbs:
           SMD: true
           from: "{{colrow}}"
           to: "{{row_net}}"
-      rgb:
+      per-key-rgb:
         what: XL-1615RGBC-WS2812B
         where: true
         adjust:
@@ -152,6 +152,15 @@ pcbs:
         params:
           din: ""
           dout: ""
+      per-key-rgb-decoupling-capacitors:
+        what: ceramic_capacitor
+        where: true
+        adjust:
+          shift: [0, 8.25]
+        params:
+          value: "100nF"
+          left: "GND"
+          right: "VCC"
       hotswap_diode_vias:
         what: covered_via
         where: true
@@ -166,6 +175,13 @@ pcbs:
           shift: [-0.7, 5.325]
         params:
           size: 0.65
+          net: "GND"
+      per-key-rgb_ground_vias:
+        what: covered_via
+        where: true
+        adjust:
+          shift: [-0.7, 8.25]
+        params:
           net: "GND"
       nice!nano:
         what: nice!nano_v2
