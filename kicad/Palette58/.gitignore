@@ -1,0 +1,14 @@
+# Working files
+*-backups
+_autosave*
+\#auto_saved_files\#
+*.lck
+fp-info-cache
+*.tmp
+
+# Freerouting
+freerouting.*
+
+# Production
+production
+fabrication-toolkit-options.json
