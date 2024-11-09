@@ -129,11 +129,44 @@ outlines:
       name: keys
     
 pcbs:
-  pcb:
+  Palette58:
     outlines:
       main:
         outline: board
     footprints:
+      diodes:
+        what: combo_diode
+        where: true
+        adjust:
+          shift: [8.25, 0]
+          rotate: -90
+        params:
+          SMD: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      rgb:
+        what: XL-1615RGBC-WS2812B
+        where: true
+        adjust:
+          shift: [0,5.75]
+        params:
+          din: ""
+          dout: ""
+      hotswap_diode_vias:
+        what: covered_via
+        where: true
+        adjust:
+          shift: [6.40, -5.75]
+        params:
+          net: "{{colrow}}"
+      led_ground_vias:
+        what: covered_via
+        where: true
+        adjust:
+          shift: [-0.7, 5.325]
+        params:
+          size: 0.65
+          net: "GND"
       nice!nano:
         what: nice!nano_v2
         params:
@@ -207,35 +240,3 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
-      diodes:
-        what: combo_diode
-        where: true
-        adjust:
-          shift: [8.25, 0]
-          rotate: -90
-        params:
-          SMD: true
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-      rgb:
-        what: WS2812B-2020
-        where: true
-        adjust:
-          shift: [0,5.75]
-        params:
-          din: ""
-          dout: ""
-      hotswap_diode_vias:
-        what: covered_via
-        where: true
-        adjust:
-          shift: [6.40, -5.75]
-        params:
-          net: "{{colrow}}"
-      led_ground_vias:
-        what: covered_via
-        where: true
-        adjust:
-          shift: [-0.915, 5.20]
-        params:
-          net: "GND"

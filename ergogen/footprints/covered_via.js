@@ -1,5 +1,6 @@
 module.exports = {
   params: {
+    size: 0.8,
     net: undefined
   },
   body: p => {
@@ -8,7 +9,7 @@ module.exports = {
   return `
     (via
       (at ${p.x} ${p.y})
-      (size 0.8)
+      (size ${p.size})
       (layers "F.Cu" "B.Cu")
       (net ${net_index})
     )
