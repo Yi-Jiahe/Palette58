@@ -1,8 +1,6 @@
-// Unpolarized SMD capacitor
-
 module.exports = {
   params: {
-    designator: 'C',
+    designator: 'R',
     // F or B
     side: 'F',
     value: undefined,
@@ -19,7 +17,7 @@ module.exports = {
     const value = `${p.value}`.slice(4, -1).split(" ")[2];
     
     let base = `
-  (module Capacitor (layer F.Cu) (tedit 5B24D78E)
+  (module Resistor (layer F.Cu) (tedit 5B24D78E)
 
       ${p.at /* parametric position */}
 

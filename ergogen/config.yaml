@@ -134,6 +134,15 @@ pcbs:
       main:
         outline: board
     footprints:
+      gateron_low_profile_hotswap:
+        what: gateron_low_profile
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
       diodes:
         what: combo_diode
         where: true
@@ -145,7 +154,7 @@ pcbs:
           SMD: true
           from: "{{colrow}}"
           to: "{{row_net}}"
-      per-key-rgb:
+      per_key_rgb:
         what: XL-1615RGBC-WS2812B
         where: true
         adjust:
@@ -153,7 +162,7 @@ pcbs:
         params:
           din: ""
           dout: ""
-      per-key-rgb-decoupling-capacitors:
+      per_key_rgb_decoupling_capacitors:
         what: ceramic_capacitor
         where: true
         adjust:
@@ -207,6 +216,16 @@ pcbs:
           ref: matrix_inner_num
           shift: [20, -9]
           rotate: -90
+      rgb_din_resistor:
+        what: resistor
+        where: matrix_inner_num
+        adjust:
+          shift: [7.5, 8.25]
+          rotate: 0
+        params:
+          value: "330Ω"
+          left: ""
+          right: ""
       oled:
         what: oled
         adjust:
@@ -220,7 +239,7 @@ pcbs:
         what: jstph
         adjust:
           ref: matrix_inner_num
-          shift: [12.5, -32]
+          shift: [11.5, -33]
           rotate: 90
         params:
           pos: "JST+"
@@ -229,9 +248,10 @@ pcbs:
         what: toggle_switch
         adjust:
           ref: matrix_inner_num
-          shift: [28.5, -32]
+          shift: [28.5, -33]
           rotate: -90
         params:
+          value: "MSK12C02-HB"
           from: "B+"
           right: "JST+"
           left: ""
@@ -239,22 +259,30 @@ pcbs:
         what: combo_diode
         adjust:
           ref: matrix_inner_num
-          shift: [12.5, -26.5]
-          rotate: 0
+          shift: [11.5, -27.5]
+          rotate: 90
         params:
           value: ""
           SMD: true
           from: "B+"
           to: "JST+"
-      gateron_low_profile_hotswap:
-        # Need the right footprints
-        # mx has too small stem hole for the low profile switches
-        # The hotswap socket is different too I believe
-        what: gateron_low_profile
-        where: true
+      reset_switch:
+        what: push_switch
+        where: matrix_inner_num
+        adjust:
+          shift: [22, -33]
+          rotate: -90
         params:
-          keycaps: true
-          reverse: false
-          hotswap: true
-          from: "{{column_net}}"
-          to: "{{colrow}}"
+          value: "TS-1187A-B-A-B"
+          A: "RST"
+          B: "GND"
+      reset_pull_up_resistor:
+        what: resistor
+        where: matrix_inner_num
+        adjust:
+          shift: [13.5, -27.5]
+          rotate: 90
+        params:
+          value: "10kΩ"
+          left: "VCC"
+          right: "RST"

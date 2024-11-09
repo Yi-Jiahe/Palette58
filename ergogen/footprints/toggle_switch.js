@@ -1,17 +1,20 @@
 module.exports = {
-  params: {
-      designator: 'T', // for Toggle
-      side: 'F',
-      from: undefined,
-      left: undefined,
-      right: undefined
-  },
-  body: p => {
+    params: {
+        designator: 'SW',
+        value: undefined,
+        side: 'F',
+        from: undefined,
+        left: undefined,
+        right: undefined
+    },
+    body: p => {
+        const value = `${p.value}`.slice(4, -1).split(" ")[2];
 
-      const left = p.side == 'F' ? '-' : ''
-      const right = p.side == 'F' ? '' : '-'
 
-      return `
+        const left = p.side == 'F' ? '-' : ''
+        const right = p.side == 'F' ? '' : '-'
+
+        return `
       
       (module E73:SPDT_C128955 (layer F.Cu) (tstamp 5BF2CC3C)
 
@@ -19,7 +22,16 @@ module.exports = {
 
           ${'' /* footprint reference */}
           (fp_text reference "${p.ref}" (at 0 0) (layer F.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
-          (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (property "Value" ${value}
+			(at 0 0)
+			(layer "F.Fab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
           
           ${'' /* outline */}
           (fp_line (start 1.95 -1.35) (end -1.95 -1.35) (layer ${p.side}.SilkS) (width 0.15))
@@ -51,5 +63,5 @@ module.exports = {
       )
       
       `
-  }
+    }
 }
