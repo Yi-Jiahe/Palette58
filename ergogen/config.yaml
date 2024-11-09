@@ -141,6 +141,7 @@ pcbs:
           shift: [8.25, 0]
           rotate: -90
         params:
+          value: "1N4148"
           SMD: true
           from: "{{colrow}}"
           to: "{{row_net}}"
@@ -241,6 +242,7 @@ pcbs:
           shift: [12.5, -26.5]
           rotate: 0
         params:
+          value: ""
           SMD: true
           from: "B+"
           to: "JST+"

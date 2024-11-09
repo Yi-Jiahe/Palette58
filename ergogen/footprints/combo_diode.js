@@ -1,6 +1,7 @@
 module.exports = {
   params: {
     designator: 'D',
+    value: undefined,
     // F or B
     side: 'F',
     reverse: false,
@@ -10,6 +11,8 @@ module.exports = {
     to: undefined
   },
   body: p => {
+    const value = `${p.value}`.slice(4, -1).split(" ")[2];
+    
     let base = `
   (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
@@ -18,7 +21,16 @@ module.exports = {
 
       ${'' /* footprint reference */}
       (fp_text reference "${p.ref}" (at 0 0) (layer F.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
-      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+		  (property "Value" ${value}
+        (at 0 0) 
+        (layer F.Fab)
+        (effects
+          (font 
+            (size 1.27 1.27) 
+            (thickness 0.15)
+          )
+        )
+      )
       
       ${''/* diode symbols */}
       (fp_line (start 0.25 0) (end 0.75 0) (layer F.SilkS) (width 0.1))
