@@ -215,15 +215,15 @@ pcbs:
           shift: [28.5, -32]
           rotate: -90
         params:
-          from: ""
+          from: "B+"
           right: "JST+"
-          left: "B+"
+          left: ""
       charging_diode:
         what: combo_diode
         adjust:
           ref: matrix_inner_num
-          shift: [23, -32]
-          rotate: 90
+          shift: [12.5, -26.5]
+          rotate: 0
         params:
           SMD: true
           from: "B+"
