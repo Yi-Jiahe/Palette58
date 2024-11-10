@@ -101,11 +101,9 @@ outlines:
       - ref: matrix_inner_num
         shift: [kx/2+border_padding, ky/2+border_padding]
       - ref: matrix_inner_num
-        shift: [30, ky/2+border_padding]
+        shift: [38.5, ky/2+border_padding]
       - ref: matrix_inner_num
-        shift: [30, -80]
-      - ref: thumb_inner_cluster
-        shift: [kx/2+border_padding, ky/2+border_padding]
+        shift: [38.5, -85]
       - ref: thumb_inner_cluster
         shift: [kx/2+border_padding, -(ky/2+border_padding)]
       - ref: thumb_home_cluster
@@ -128,26 +126,26 @@ outlines:
       operation: stack
       points:
         - ref: matrix_inner_num
-          shift: [17, 4]
+          shift: [21.5, 4]
         - ref: matrix_inner_num
-          shift: [24, 4]
+          shift: [28.5, 4]
         - ref: matrix_inner_num
-          shift: [24, -1]
+          shift: [28.5, -1]
         - ref: matrix_inner_num
-          shift: [17, -1]
+          shift: [21.5, -1]
       fillet: 0.5
     - what: polygon
       operation: stack
       points:
         - ref: matrix_inner_home
-          shift: [10, 1]
+          shift: [10, -0.5]
         - ref: matrix_inner_home
-          shift: [25, 1]
+          shift: [31, -0.5]
         - ref: matrix_inner_bottom
-          shift: [25, -9.5]
+          shift: [31, -21]
         - ref: matrix_inner_bottom
-          shift: [10, -4.5]
-      fillet: 2.5
+          shift: [10, -12.5]
+      fillet: 7.5
   combo:
     - name: outer
     - operation: subtract
@@ -243,7 +241,7 @@ pcbs:
           BMINUS: "GND"
         where:
           ref: matrix_inner_num
-          shift: [20, -9]
+          shift: [24.5, -7.5]
           rotate: -90
       rgb_din_resistor:
         what: resistor
@@ -259,7 +257,7 @@ pcbs:
         what: oled
         adjust:
           ref: matrix_inner_num
-          shift: [26, -25]
+          shift: [30.5, -23.5]
           rotate: -90
         params:
           SDA: "SDA"
@@ -268,7 +266,7 @@ pcbs:
         what: jstph
         adjust:
           ref: matrix_inner_num
-          shift: [12.5, -32]
+          shift: [12.5, -30.5]
           rotate: 90
         params:
           pos: "JST+"
@@ -277,8 +275,8 @@ pcbs:
         what: toggle_switch
         adjust:
           ref: matrix_inner_num
-          shift: [28.5, -74]
-          rotate: -90
+          shift: [21, -36.5]
+          rotate: 180
         params:
           value: "MSK12C02-HB"
           from: "B+"
@@ -288,8 +286,8 @@ pcbs:
         what: combo_diode
         adjust:
           ref: matrix_inner_num
-          shift: [27.5, -32]
-          rotate: 90
+          shift: [13, -26.5]
+          rotate: 0
         params:
           value: "1N5819"
           SMD: true
@@ -299,8 +297,8 @@ pcbs:
         what: push_switch
         where: matrix_inner_num
         adjust:
-          shift: [18, -70]
-          rotate: -20
+          shift: [35, -30]
+          rotate: 90
         params:
           value: "TS-1187A-B-A-B"
           A: "RST"
@@ -309,7 +307,7 @@ pcbs:
         what: resistor
         where: matrix_inner_num
         adjust:
-          shift: [11.5, -65]
+          shift: [30, -30]
           rotate: 90
         params:
           value: "10kΩ"
