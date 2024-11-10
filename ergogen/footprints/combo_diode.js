@@ -13,6 +13,17 @@ module.exports = {
   body: p => {
     const value = `${p.value}`.slice(4, -1).split(" ")[2];
     
+    let pad_x_mm, pad_width_mm, pad_height_mm;
+    // // 123
+    // pad_x_mm = 1.65;
+    // pad_width_mm = 0.9;
+    // pad_height_mm = 1.2;
+
+    // 323
+    pad_x_mm = 1.055;
+    pad_width_mm = 0.590;
+    pad_height_mm = 0.450;
+
     let base = `
   (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
@@ -54,14 +65,14 @@ module.exports = {
       if (!p.reverse) {        
         if (p.side == "F") {
           base += `
-          (pad 1 smd rect (at -1.65 0 ${p.r}) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) ${p.to})
-          (pad 2 smd rect (at 1.65 0 ${p.r}) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) ${p.from})
+          (pad 1 smd rect (at -${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers F.Cu F.Paste F.Mask) ${p.to})
+          (pad 2 smd rect (at ${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers F.Cu F.Paste F.Mask) ${p.from})
 
           `;
         } else if (p.side == "B") {
           base += `
-          (pad 1 smd rect (at -1.65 0 ${p.r}) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) ${p.to})
-          (pad 2 smd rect (at 1.65 0 ${p.r}) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) ${p.from})
+          (pad 1 smd rect (at -${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers B.Cu B.Paste B.Mask) ${p.to})
+          (pad 2 smd rect (at ${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers B.Cu B.Paste B.Mask) ${p.from})
 
           `;
         } else {
@@ -69,10 +80,10 @@ module.exports = {
         }
       } else {
         base += `
-        (pad 1 smd rect (at -1.65 0 ${p.r}) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) ${p.to})
-        (pad 2 smd rect (at 1.65 0 ${p.r}) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) ${p.from})
-        (pad 1 smd rect (at -1.65 0 ${p.r}) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) ${p.to})
-        (pad 2 smd rect (at 1.65 0 ${p.r}) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) ${p.from})
+        (pad 1 smd rect (at -${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers F.Cu F.Paste F.Mask) ${p.to})
+        (pad 2 smd rect (at ${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers B.Cu B.Paste B.Mask) ${p.from})
+        (pad 1 smd rect (at -${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers B.Cu B.Paste B.Mask) ${p.to})
+        (pad 2 smd rect (at ${pad_x_mm} 0 ${p.r}) (size ${pad_width_mm} ${pad_height_mm}) (layers F.Cu F.Paste F.Mask) ${p.from})
 
         `
       }
