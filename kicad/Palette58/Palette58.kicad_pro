@@ -126,7 +126,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.4,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -607,6 +607,122 @@
       },
       {
         "netclass": "Default",
+        "pattern": "mirror_outer_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bottom"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_home"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer-3_cluster"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer-2_cluster"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_outer_cluster"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_home_cluster"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_cluster"
+      },
+      {
+        "netclass": "Default",
         "pattern": "1N4148"
       },
       {
@@ -796,6 +912,18 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
           "show": false
         }
       ],

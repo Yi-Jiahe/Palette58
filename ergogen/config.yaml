@@ -3,7 +3,8 @@ units:
   kx: u
   ky: u
   border_padding: 2
-
+  # From matrix_inner_num to vertical mirror axis
+  mirror_distance: 38.5
 points:
   zones:
     matrix:
@@ -75,6 +76,9 @@ points:
       rows:
         cluster:
           row_net: row_5
+  mirror:
+    ref: matrix_inner_num
+    distance: mirror_distance * 2
 
 outlines:
   keys:
@@ -82,28 +86,14 @@ outlines:
       where: true
       bound: false
       size: [14,14]
-  outer:
+  outer_left:
     - what: polygon
       operation: stack
       points:
-      - ref: matrix_outer_num
-        shift: [-(kx/2+border_padding), ky/2+border_padding]
-      - ref: matrix_pinky_num
-        shift: [-(kx/2+border_padding), ky/2+border_padding]
-      - ref: matrix_ring_num
-        shift: [-(kx/2+border_padding), ky/2+border_padding]
-      - ref: matrix_middle_num
-        shift: [-(kx/2+border_padding), ky/2+border_padding]
-      - ref: matrix_middle_num
-        shift: [kx/2+border_padding, ky/2+border_padding]
-      - ref: matrix_index_num
-        shift: [kx/2+border_padding, ky/2+border_padding]
       - ref: matrix_inner_num
-        shift: [kx/2+border_padding, ky/2+border_padding]
+        shift: [mirror_distance, ky/2+border_padding]
       - ref: matrix_inner_num
-        shift: [38.5, ky/2+border_padding]
-      - ref: matrix_inner_num
-        shift: [38.5, -85]
+        shift: [mirror_distance, -85]
       - ref: thumb_inner_cluster
         shift: [kx/2+border_padding, -(ky/2+border_padding)]
       - ref: thumb_home_cluster
@@ -120,22 +110,89 @@ outlines:
         shift: [kx/2+border_padding, -(ky/2+border_padding)]
       - ref: matrix_outer_bottom
         shift: [-(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: matrix_outer_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: matrix_pinky_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: matrix_ring_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: matrix_middle_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: matrix_middle_num
+        shift: [kx/2+border_padding, ky/2+border_padding]
+      - ref: matrix_index_num
+        shift: [kx/2+border_padding, ky/2+border_padding]
+      - ref: matrix_inner_num
+        shift: [kx/2+border_padding, ky/2+border_padding]
       fillet: 5
-  cutouts:
+  outer_right:
     - what: polygon
       operation: stack
       points:
+      - ref: mirror_matrix_inner_num
+        shift: [mirror_distance, ky/2+border_padding]
+      - ref: mirror_matrix_inner_num
+        shift: [mirror_distance, -85]
+      - ref: mirror_thumb_inner_cluster
+        shift: [(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_thumb_home_cluster
+        shift: [(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_thumb_outer_cluster
+        shift: [(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_thumb_outer-2_cluster
+        shift: [(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_thumb_outer-3_cluster
+        shift: [(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_thumb_outer-3_cluster
+        shift: [-(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_matrix_outer_bottom
+        shift: [kx/2+border_padding, -(ky/2+border_padding)]
+      - ref: mirror_matrix_outer_bottom
+        shift: [-(kx/2+border_padding), -(ky/2+border_padding)]
+      - ref: mirror_matrix_outer_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_pinky_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_ring_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_middle_num
+        shift: [-(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_middle_num
+        shift: [(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_index_num
+        shift: [(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_inner_num
+        shift: [(kx/2+border_padding), ky/2+border_padding]
+      - ref: mirror_matrix_inner_num
+        shift: [(mirror_distance), ky/2+border_padding]
+      fillet: 5
+  cutouts:
+    - what: polygon
+      operation: add
+      points:
         - ref: matrix_inner_num
-          shift: [21.5, 4]
+          shift: [21, 4]
         - ref: matrix_inner_num
           shift: [28.5, 4]
         - ref: matrix_inner_num
           shift: [28.5, -1]
         - ref: matrix_inner_num
-          shift: [21.5, -1]
+          shift: [21, -1]
       fillet: 0.5
     - what: polygon
-      operation: stack
+      operation: add
+      points:
+        - ref: mirror_matrix_inner_num
+          shift: [21, 4]
+        - ref: mirror_matrix_inner_num
+          shift: [28.5, 4]
+        - ref: mirror_matrix_inner_num
+          shift: [28.5, -1]
+        - ref: mirror_matrix_inner_num
+          shift: [21, -1]
+      fillet: 0.5
+    - what: polygon
+      operation: add
       points:
         - ref: matrix_inner_home
           shift: [10, -0.5]
@@ -146,15 +203,28 @@ outlines:
         - ref: matrix_inner_bottom
           shift: [10, -12.5]
       fillet: 7.5
+    - what: polygon
+      operation: add
+      points:
+        - ref: mirror_matrix_inner_home
+          shift: [10, -0.5]
+        - ref: mirror_matrix_inner_home
+          shift: [31, -0.5]
+        - ref: mirror_matrix_inner_bottom
+          shift: [31, -21]
+        - ref: mirror_matrix_inner_bottom
+          shift: [10, -12.5]
+      fillet: 7.5
   combo:
-    - name: outer
+    - name: outer_left
     - operation: subtract
       name: keys
   board:
-    - name: outer
+    - name: outer_left
+    - operation: add
+      name: outer_right
     - operation: subtract
       name: cutouts
-    
 pcbs:
   Palette58:
     outlines:
@@ -176,6 +246,7 @@ pcbs:
         adjust:
           shift: [8.25, 0]
           rotate: -90
+          resist: true
         params:
           value: "1N4148"
           SMD: true
@@ -186,6 +257,7 @@ pcbs:
         where: true
         adjust:
           shift: [0,5.75]
+          resist: true
         params:
           din: ""
           dout: ""
@@ -203,24 +275,28 @@ pcbs:
         where: true
         adjust:
           shift: [6.40, -5.75]
+          resist: true
         params:
           net: "{{colrow}}"
-      led_ground_vias:
+      per_key_led_ground_vias:
         what: covered_via
         where: true
         adjust:
           shift: [-0.7, 5.325]
+          resist: true
         params:
           size: 0.65
           net: "GND"
-      per-key-rgb_ground_vias:
+      per_key_rgb_capacitor_ground_vias:
         what: covered_via
         where: true
         adjust:
-          shift: [-0.7, 8.25]
+          shift: [-0.48, 8.25]
+          resist: true
         params:
+          size: 0.56
           net: "GND"
-      nice!nano:
+      nice!nano_left:
         what: nice!nano_v2
         params:
           orientation: "down"
@@ -241,28 +317,73 @@ pcbs:
           BMINUS: "GND"
         where:
           ref: matrix_inner_num
+        adjust:
           shift: [24.5, -7.5]
           rotate: -90
-      rgb_din_resistor:
+      nice!nano_right:
+        what: nice!nano_v2
+        params:
+          orientation: "down"
+          P031: "col_1"
+          P029: "col_2"
+          P002: "col_3"
+          P115: "col_4"
+          P113: "col_5"
+          P111: "col_6"
+          P017: "row_1"
+          P020: "row_2"
+          P022: "row_3"
+          P024: "row_4"
+          P100: "row_5"
+          P104: "SCL"
+          P106: "SDA"
+          BPLUS: "B+"
+          BMINUS: "GND"
+        where:
+          ref: mirror_matrix_inner_num
+        adjust:
+          shift: [24.5, -7.5]
+          rotate: 90
+          # resist: true
+      rgb_din_resistor_left:
         what: resistor
         where: matrix_inner_num
         adjust:
-          shift: [7.5, 8.25]
+          shift: [12.5, 8.25]
           rotate: 0
         params:
           value: "330Ω"
           left: ""
           right: ""
-      oled:
-        what: oled
+      rgb_din_resistor_right:
+        what: resistor
+        where: mirror_matrix_inner_num
         adjust:
-          ref: matrix_inner_num
+          shift: [12.5, 8.25]
+          rotate: 180
+        params:
+          value: "330Ω"
+          left: ""
+          right: ""
+      oled_left:
+        what: oled
+        where: matrix_inner_num
+        adjust:
           shift: [30.5, -23.5]
           rotate: -90
         params:
           SDA: "SDA"
           SCL: "SCL"
-      jstph:
+      oled_right:
+        what: oled
+        where: mirror_matrix_inner_num
+        adjust:
+          shift: [30.5-12, -23.5]
+          rotate: 90
+        params:
+          SDA: "SDA"
+          SCL: "SCL"
+      jstph_left:
         what: jstph
         adjust:
           ref: matrix_inner_num
@@ -271,10 +392,19 @@ pcbs:
         params:
           pos: "JST+"
           neg: "GND"
-      power_switch:
-        what: toggle_switch
+      jstph_right:
+        what: jstph
         adjust:
-          ref: matrix_inner_num
+          ref: mirror_matrix_inner_num
+          shift: [12.5, -30.5]
+          rotate: 90
+        params:
+          pos: "JST+"
+          neg: "GND"
+      power_switch_left:
+        what: toggle_switch
+        where: matrix_inner_num
+        adjust:
           shift: [21, -36.5]
           rotate: 180
         params:
@@ -282,7 +412,18 @@ pcbs:
           from: "B+"
           right: "JST+"
           left: ""
-      charging_diode:
+      power_switch_right:
+        what: toggle_switch
+        where: mirror_matrix_inner_num
+        adjust:
+          shift: [21, -36.5]
+          rotate: 180
+        params:
+          value: "MSK12C02-HB"
+          from: "B+"
+          right: "JST+"
+          left: ""
+      charging_diode_left:
         what: combo_diode
         adjust:
           ref: matrix_inner_num
@@ -293,7 +434,18 @@ pcbs:
           SMD: true
           from: "B+"
           to: "JST+"
-      reset_switch:
+      charging_diode_right:
+        what: combo_diode
+        adjust:
+          ref: mirror_matrix_inner_num
+          shift: [13, -26.5]
+          rotate: 180
+        params:
+          value: "1N5819"
+          SMD: true
+          from: "B+"
+          to: "JST+"
+      reset_switch_left:
         what: push_switch
         where: matrix_inner_num
         adjust:
@@ -303,12 +455,32 @@ pcbs:
           value: "TS-1187A-B-A-B"
           A: "RST"
           B: "GND"
-      reset_pull_up_resistor:
+      reset_switch_right:
+        what: push_switch
+        where: mirror_matrix_inner_num
+        adjust:
+          shift: [35, -30]
+          rotate: 90
+        params:
+          value: "TS-1187A-B-A-B"
+          A: "RST"
+          B: "GND"
+      reset_pull_up_resistor_left:
         what: resistor
         where: matrix_inner_num
         adjust:
           shift: [30, -30]
           rotate: 90
+        params:
+          value: "10kΩ"
+          left: "VCC"
+          right: "RST"
+      reset_pull_up_resistor_right:
+        what: resistor
+        where: mirror_matrix_inner_num
+        adjust:
+          shift: [30, -30]
+          rotate: -90
         params:
           value: "10kΩ"
           left: "VCC"
