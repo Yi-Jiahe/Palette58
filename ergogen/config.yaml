@@ -82,7 +82,7 @@ outlines:
       where: true
       bound: false
       size: [14,14]
-  board:
+  outer:
     - what: polygon
       operation: stack
       points:
@@ -123,10 +123,39 @@ outlines:
       - ref: matrix_outer_bottom
         shift: [-(kx/2+border_padding), -(ky/2+border_padding)]
       fillet: 5
+  cutouts:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_inner_num
+          shift: [17, 4]
+        - ref: matrix_inner_num
+          shift: [24, 4]
+        - ref: matrix_inner_num
+          shift: [24, -1]
+        - ref: matrix_inner_num
+          shift: [17, -1]
+      fillet: 0.5
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_inner_home
+          shift: [10, 1]
+        - ref: matrix_inner_home
+          shift: [25, 1]
+        - ref: matrix_inner_bottom
+          shift: [25, -9.5]
+        - ref: matrix_inner_bottom
+          shift: [10, -4.5]
+      fillet: 2.5
   combo:
-    - name: board
+    - name: outer
     - operation: subtract
       name: keys
+  board:
+    - name: outer
+    - operation: subtract
+      name: cutouts
     
 pcbs:
   Palette58:
@@ -239,7 +268,7 @@ pcbs:
         what: jstph
         adjust:
           ref: matrix_inner_num
-          shift: [11.5, -33]
+          shift: [12.5, -32]
           rotate: 90
         params:
           pos: "JST+"
@@ -248,7 +277,7 @@ pcbs:
         what: toggle_switch
         adjust:
           ref: matrix_inner_num
-          shift: [28.5, -33]
+          shift: [28.5, -74]
           rotate: -90
         params:
           value: "MSK12C02-HB"
@@ -259,7 +288,7 @@ pcbs:
         what: combo_diode
         adjust:
           ref: matrix_inner_num
-          shift: [11.5, -27.5]
+          shift: [27.5, -32]
           rotate: 90
         params:
           value: "1N5819"
@@ -270,8 +299,8 @@ pcbs:
         what: push_switch
         where: matrix_inner_num
         adjust:
-          shift: [22, -33]
-          rotate: -90
+          shift: [18, -70]
+          rotate: -20
         params:
           value: "TS-1187A-B-A-B"
           A: "RST"
@@ -280,7 +309,7 @@ pcbs:
         what: resistor
         where: matrix_inner_num
         adjust:
-          shift: [13.5, -27.5]
+          shift: [11.5, -65]
           rotate: 90
         params:
           value: "10kΩ"
