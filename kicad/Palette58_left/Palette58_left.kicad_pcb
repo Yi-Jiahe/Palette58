@@ -3713,7 +3713,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -8.25 0)
+      (at 0 -9.25 0)
 
 
     
@@ -3746,7 +3746,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -27.25 0)
+      (at 0 -28.25 0)
 
 
     
@@ -3779,7 +3779,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -46.25 0)
+      (at 0 -47.25 0)
 
 
     
@@ -3812,7 +3812,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -65.25 0)
+      (at 0 -66.25 0)
 
 
     
@@ -3845,7 +3845,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -13.25 0)
+      (at 19 -14.25 0)
 
 
     
@@ -3878,7 +3878,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -32.25 0)
+      (at 19 -33.25 0)
 
 
     
@@ -3911,7 +3911,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -51.25 0)
+      (at 19 -52.25 0)
 
 
     
@@ -3944,7 +3944,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -70.25 0)
+      (at 19 -71.25 0)
 
 
     
@@ -3977,7 +3977,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -28.25 0)
+      (at 38 -29.25 0)
 
 
     
@@ -4010,7 +4010,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -47.25 0)
+      (at 38 -48.25 0)
 
 
     
@@ -4043,7 +4043,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -66.25 0)
+      (at 38 -67.25 0)
 
 
     
@@ -4076,7 +4076,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -85.25 0)
+      (at 38 -86.25 0)
 
 
     
@@ -4109,7 +4109,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -31.75 0)
+      (at 57 -32.75 0)
 
 
     
@@ -4142,7 +4142,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -50.75 0)
+      (at 57 -51.75 0)
 
 
     
@@ -4175,7 +4175,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -69.75 0)
+      (at 57 -70.75 0)
 
 
     
@@ -4208,7 +4208,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -88.75 0)
+      (at 57 -89.75 0)
 
 
     
@@ -4241,7 +4241,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -25.75 0)
+      (at 76 -26.75 0)
 
 
     
@@ -4274,7 +4274,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -44.75 0)
+      (at 76 -45.75 0)
 
 
     
@@ -4307,7 +4307,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -63.75 0)
+      (at 76 -64.75 0)
 
 
     
@@ -4340,7 +4340,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -82.75 0)
+      (at 76 -83.75 0)
 
 
     
@@ -4373,7 +4373,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -21.75 0)
+      (at 95 -22.75 0)
 
 
     
@@ -4406,7 +4406,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -40.75 0)
+      (at 95 -41.75 0)
 
 
     
@@ -4439,7 +4439,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -59.75 0)
+      (at 95 -60.75 0)
 
 
     
@@ -4472,7 +4472,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -78.75 0)
+      (at 95 -79.75 0)
 
 
     
@@ -4505,7 +4505,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 41.7190349 -7.218606299999999 -5)
+      (at 41.8061906 -8.214801 -5)
 
 
     
@@ -4538,7 +4538,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 62.5016283 -4.4551161 -10)
+      (at 62.6752764 -5.439923800000001 -10)
 
 
     
@@ -4571,7 +4571,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 82.87160030000001 0.2047971999999989 -15)
+      (at 83.13041940000001 -0.761128600000001 -15)
 
 
     
@@ -4604,7 +4604,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 102.65725640000001 6.7095129999999985 -20)
+      (at 102.99927650000001 5.769820399999999 -20)
 
 
     
@@ -4637,7 +4637,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 121.77734350000001 14.810718199999997 -25)
+      (at 122.19996170000002 13.904410399999996 -25)
 
 
     
@@ -5879,6 +5879,126 @@
 			(zone_connect 2)
 		)
 	)
+
+  (module ToolingHole (layer F.Cu) (tedit 5B24D78E)
+
+    (at -8.5 -65.5 0)
+
+
+    
+    (property "Reference" _34
+      (at 0 0) 
+      (layer F.SilkS) 
+      hide
+      (effects 
+        (font 
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+		(property "Value" ""
+			(at 0 0)
+			(layer "F.Fab")
+      hide
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+
+    (pad "1" thru_hole circle 
+      (at 0 0) 
+      (size 1.152 1.152) 
+      (drill 1.152) 
+      (layers *.Cu *.SilkS *.Mask) 
+			(remove_unused_layers no)
+			(zone_connect 2)
+    )
+  )
+  
+
+  (module ToolingHole (layer F.Cu) (tedit 5B24D78E)
+
+    (at -8.5 8.5 0)
+
+
+    
+    (property "Reference" _35
+      (at 0 0) 
+      (layer F.SilkS) 
+      hide
+      (effects 
+        (font 
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+		(property "Value" ""
+			(at 0 0)
+			(layer "F.Fab")
+      hide
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+
+    (pad "1" thru_hole circle 
+      (at 0 0) 
+      (size 1.152 1.152) 
+      (drill 1.152) 
+      (layers *.Cu *.SilkS *.Mask) 
+			(remove_unused_layers no)
+			(zone_connect 2)
+    )
+  )
+  
+
+  (module ToolingHole (layer F.Cu) (tedit 5B24D78E)
+
+    (at 122.40210380000002 33.5836288 -25)
+
+
+    
+    (property "Reference" _36
+      (at 0 0) 
+      (layer F.SilkS) 
+      hide
+      (effects 
+        (font 
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+		(property "Value" ""
+			(at 0 0)
+			(layer "F.Fab")
+      hide
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+
+    (pad "1" thru_hole circle 
+      (at 0 0) 
+      (size 1.152 1.152) 
+      (drill 1.152) 
+      (layers *.Cu *.SilkS *.Mask) 
+			(remove_unused_layers no)
+			(zone_connect 2)
+    )
+  )
+  
   (gr_line (start 107.02060967499999 -82) (end 128.5 -82) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 133.5 -77) (end 133.5 13.49672123132001) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 133.11295608511745 15.425616266911675) (end 125.89743549097078 32.68154764670044) (angle 90) (layer Edge.Cuts) (width 0.15))

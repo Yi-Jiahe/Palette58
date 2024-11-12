@@ -425,6 +425,21 @@ pcbs:
         where: matrix_pinky_num
         adjust:
           shift: [4, 15.5]
+      tooling_hole_outer_top:
+        what: jlcpcb_tooling_hole
+        where: matrix_outer_num
+        adjust:
+          shift: [-8.5, 8.5]
+      tooling_hole_outer_bottom:
+        what: jlcpcb_tooling_hole
+        where: matrix_outer_bottom
+        adjust:
+          shift: [-8.5, -8.5]
+      tooling_hole_inner_bottom:
+        what: jlcpcb_tooling_hole
+        where: thumb_inner_cluster
+        adjust:
+          shift: [8.5, -8.5]
   Palette58_right:
     outlines:
       main:
@@ -624,3 +639,18 @@ pcbs:
         where: mirror_matrix_pinky_num
         adjust:
           shift: [4, 15.5]
+      tooling_hole_outer_top:
+        what: jlcpcb_tooling_hole
+        where: mirror_matrix_outer_num
+        adjust:
+          shift: [-8.5, 8.5]
+      tooling_hole_outer_bottom:
+        what: jlcpcb_tooling_hole
+        where: mirror_matrix_outer_bottom
+        adjust:
+          shift: [-8.5, -8.5]
+      tooling_hole_inner_bottom:
+        what: jlcpcb_tooling_hole
+        where: mirror_thumb_inner_cluster
+        adjust:
+          shift: [8.5, -8.5]
