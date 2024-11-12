@@ -432,7 +432,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Palette58.kicad_pro",
+    "filename": "Palette58_right.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -471,142 +471,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "outer_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "col_2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "col_3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "col_4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "col_5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "col_6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer-3_cluster"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer-2_cluster"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_cluster"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "home_cluster"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_cluster"
-      },
-      {
-        "netclass": "Default",
         "pattern": "mirror_outer_bottom"
       },
       {
@@ -620,6 +484,10 @@
       {
         "netclass": "Default",
         "pattern": "mirror_outer_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "col_2"
       },
       {
         "netclass": "Default",
@@ -639,6 +507,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "col_3"
+      },
+      {
+        "netclass": "Default",
         "pattern": "mirror_ring_bottom"
       },
       {
@@ -652,6 +524,10 @@
       {
         "netclass": "Default",
         "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "col_4"
       },
       {
         "netclass": "Default",
@@ -671,6 +547,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "col_5"
+      },
+      {
+        "netclass": "Default",
         "pattern": "mirror_index_bottom"
       },
       {
@@ -684,6 +564,10 @@
       {
         "netclass": "Default",
         "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "col_6"
       },
       {
         "netclass": "Default",
@@ -901,35 +785,11 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "",
+      "name": "Grouped By Value",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -974,7 +834,7 @@
   },
   "sheets": [
     [
-      "4d246c53-76ff-421f-933f-adc8a50f836b",
+      "4c21d5b7-56f8-44ef-adb2-c4daaa5b1a8e",
       "Root"
     ]
   ],

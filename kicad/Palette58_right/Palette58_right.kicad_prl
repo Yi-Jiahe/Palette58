@@ -67,7 +67,7 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_7ffffffe",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -77,7 +77,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Palette58.kicad_prl",
+    "filename": "Palette58_right.kicad_prl",
     "version": 3
   },
   "project": {

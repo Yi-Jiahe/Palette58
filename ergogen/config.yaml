@@ -219,21 +219,25 @@ outlines:
     - name: outer_left
     - operation: subtract
       name: keys
-  board:
+  board_left:
     - name: outer_left
-    - operation: add
-      name: outer_right
+    - operation: subtract
+      name: cutouts
+  board_right:
+    - name: outer_right
     - operation: subtract
       name: cutouts
 pcbs:
-  Palette58:
+  Palette58_left:
     outlines:
       main:
-        outline: board
+        outline: board_left
     footprints:
       gateron_low_profile_hotswap:
         what: gateron_low_profile
-        where: true
+        where: 
+          - /^matrix_.*/
+          - /^thumb_.*/
         params:
           keycaps: true
           reverse: false
@@ -242,7 +246,9 @@ pcbs:
           to: "{{colrow}}"
       diodes:
         what: combo_diode
-        where: true
+        where: 
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [8.25, 0]
           rotate: -90
@@ -254,7 +260,9 @@ pcbs:
           to: "{{row_net}}"
       per_key_rgb:
         what: XL-1615RGBC-WS2812B
-        where: true
+        where: 
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [0,5.75]
           resist: true
@@ -263,7 +271,9 @@ pcbs:
           dout: ""
       per_key_rgb_decoupling_capacitors:
         what: ceramic_capacitor
-        where: true
+        where: 
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [0, 8.25]
         params:
@@ -272,7 +282,9 @@ pcbs:
           right: "VCC"
       hotswap_diode_vias:
         what: covered_via
-        where: true
+        where: 
+          - matrix
+          - thumb
         adjust:
           shift: [6.40, -5.75]
           resist: true
@@ -280,7 +292,9 @@ pcbs:
           net: "{{colrow}}"
       per_key_led_ground_vias:
         what: covered_via
-        where: true
+        where: 
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [-0.7, 5.325]
           resist: true
@@ -289,7 +303,9 @@ pcbs:
           net: "GND"
       per_key_rgb_capacitor_ground_vias:
         what: covered_via
-        where: true
+        where: 
+          - matrix
+          - thumb
         adjust:
           shift: [-0.48, 8.25]
           resist: true
@@ -315,11 +331,164 @@ pcbs:
           P106: "SDA"
           BPLUS: "B+"
           BMINUS: "GND"
-        where:
-          ref: matrix_inner_num
+        where: matrix_inner_num
         adjust:
           shift: [24.5, -7.5]
           rotate: -90
+      rgb_din_resistor_left:
+        what: resistor
+        where: matrix_inner_num
+        adjust:
+          shift: [12.5, 8.25]
+          rotate: 0
+        params:
+          value: "330Ω"
+          left: ""
+          right: ""
+      oled_left:
+        what: oled
+        where: matrix_inner_num
+        adjust:
+          shift: [30.5, -23.5]
+          rotate: -90
+        params:
+          SDA: "SDA"
+          SCL: "SCL"
+      jstph_left:
+        what: jstph
+        adjust:
+          ref: matrix_inner_num
+          shift: [12.5, -30.5]
+          rotate: 90
+        params:
+          pos: "JST+"
+          neg: "GND"
+      power_switch_left:
+        what: toggle_switch
+        where: matrix_inner_num
+        adjust:
+          shift: [21, -36.5]
+          rotate: 180
+        params:
+          value: "MSK12C02-HB"
+          from: "B+"
+          right: "JST+"
+          left: ""
+      charging_diode_left:
+        what: combo_diode
+        adjust:
+          ref: matrix_inner_num
+          shift: [13, -26.5]
+          rotate: 0
+        params:
+          value: "1N5819"
+          SMD: true
+          from: "B+"
+          to: "JST+"
+      reset_switch_left:
+        what: push_switch
+        where: matrix_inner_num
+        adjust:
+          shift: [35, -30]
+          rotate: 90
+        params:
+          value: "TS-1187A-B-A-B"
+          A: "RST"
+          B: "GND"
+      reset_pull_up_resistor_left:
+        what: resistor
+        where: matrix_inner_num
+        adjust:
+          shift: [30, -30]
+          rotate: 90
+        params:
+          value: "10kΩ"
+          left: "VCC"
+          right: "RST"
+  Palette58_right:
+    outlines:
+      main:
+        outline: board_right
+    footprints:
+      gateron_low_profile_hotswap:
+        what: gateron_low_profile
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diodes:
+        what: combo_diode
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [8.25, 0]
+          rotate: -90
+          resist: true
+        params:
+          value: "1N4148"
+          SMD: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      per_key_rgb:
+        what: XL-1615RGBC-WS2812B
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [0,5.75]
+          resist: true
+        params:
+          din: ""
+          dout: ""
+      per_key_rgb_decoupling_capacitors:
+        what: ceramic_capacitor
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [0, 8.25]
+        params:
+          value: "100nF"
+          left: "GND"
+          right: "VCC"
+      hotswap_diode_vias:
+        what: covered_via
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [6.40, -5.75]
+          resist: true
+        params:
+          net: "{{colrow}}"
+      per_key_led_ground_vias:
+        what: covered_via
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [-0.7, 5.325]
+          resist: true
+        params:
+          size: 0.65
+          net: "GND"
+      per_key_rgb_capacitor_ground_vias:
+        what: covered_via
+        where: 
+          - /^mirror_matrix_.*/
+          - /^mirror_thumb_.*/
+        adjust:
+          shift: [-0.48, 8.25]
+          resist: true
+        params:
+          size: 0.56
+          net: "GND"
       nice!nano_right:
         what: nice!nano_v2
         params:
@@ -345,9 +514,9 @@ pcbs:
           shift: [24.5, -7.5]
           rotate: 90
           # resist: true
-      rgb_din_resistor_left:
+      rgb_din_resistor_right:
         what: resistor
-        where: matrix_inner_num
+        where: mirror_matrix_inner_num
         adjust:
           shift: [12.5, 8.25]
           rotate: 0
@@ -355,25 +524,6 @@ pcbs:
           value: "330Ω"
           left: ""
           right: ""
-      rgb_din_resistor_right:
-        what: resistor
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [12.5, 8.25]
-          rotate: 180
-        params:
-          value: "330Ω"
-          left: ""
-          right: ""
-      oled_left:
-        what: oled
-        where: matrix_inner_num
-        adjust:
-          shift: [30.5, -23.5]
-          rotate: -90
-        params:
-          SDA: "SDA"
-          SCL: "SCL"
       oled_right:
         what: oled
         where: mirror_matrix_inner_num
@@ -383,15 +533,6 @@ pcbs:
         params:
           SDA: "SDA"
           SCL: "SCL"
-      jstph_left:
-        what: jstph
-        adjust:
-          ref: matrix_inner_num
-          shift: [12.5, -30.5]
-          rotate: 90
-        params:
-          pos: "JST+"
-          neg: "GND"
       jstph_right:
         what: jstph
         adjust:
@@ -401,17 +542,6 @@ pcbs:
         params:
           pos: "JST+"
           neg: "GND"
-      power_switch_left:
-        what: toggle_switch
-        where: matrix_inner_num
-        adjust:
-          shift: [21, -36.5]
-          rotate: 180
-        params:
-          value: "MSK12C02-HB"
-          from: "B+"
-          right: "JST+"
-          left: ""
       power_switch_right:
         what: toggle_switch
         where: mirror_matrix_inner_num
@@ -423,17 +553,6 @@ pcbs:
           from: "B+"
           right: "JST+"
           left: ""
-      charging_diode_left:
-        what: combo_diode
-        adjust:
-          ref: matrix_inner_num
-          shift: [13, -26.5]
-          rotate: 0
-        params:
-          value: "1N5819"
-          SMD: true
-          from: "B+"
-          to: "JST+"
       charging_diode_right:
         what: combo_diode
         adjust:
@@ -445,16 +564,6 @@ pcbs:
           SMD: true
           from: "B+"
           to: "JST+"
-      reset_switch_left:
-        what: push_switch
-        where: matrix_inner_num
-        adjust:
-          shift: [35, -30]
-          rotate: 90
-        params:
-          value: "TS-1187A-B-A-B"
-          A: "RST"
-          B: "GND"
       reset_switch_right:
         what: push_switch
         where: mirror_matrix_inner_num
@@ -465,16 +574,6 @@ pcbs:
           value: "TS-1187A-B-A-B"
           A: "RST"
           B: "GND"
-      reset_pull_up_resistor_left:
-        what: resistor
-        where: matrix_inner_num
-        adjust:
-          shift: [30, -30]
-          rotate: 90
-        params:
-          value: "10kΩ"
-          left: "VCC"
-          right: "RST"
       reset_pull_up_resistor_right:
         what: resistor
         where: mirror_matrix_inner_num
