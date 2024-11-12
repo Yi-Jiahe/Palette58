@@ -3713,7 +3713,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -9.25 0)
+      (at 0 -9 0)
 
 
     
@@ -3746,7 +3746,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -28.25 0)
+      (at 0 -28 0)
 
 
     
@@ -3779,7 +3779,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -47.25 0)
+      (at 0 -47 0)
 
 
     
@@ -3812,7 +3812,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 0 -66.25 0)
+      (at 0 -66 0)
 
 
     
@@ -3845,7 +3845,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -14.25 0)
+      (at 19 -14 0)
 
 
     
@@ -3878,7 +3878,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -33.25 0)
+      (at 19 -33 0)
 
 
     
@@ -3911,7 +3911,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -52.25 0)
+      (at 19 -52 0)
 
 
     
@@ -3944,7 +3944,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 19 -71.25 0)
+      (at 19 -71 0)
 
 
     
@@ -3977,7 +3977,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -29.25 0)
+      (at 38 -29 0)
 
 
     
@@ -4010,7 +4010,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -48.25 0)
+      (at 38 -48 0)
 
 
     
@@ -4043,7 +4043,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -67.25 0)
+      (at 38 -67 0)
 
 
     
@@ -4076,7 +4076,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 38 -86.25 0)
+      (at 38 -86 0)
 
 
     
@@ -4109,7 +4109,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -32.75 0)
+      (at 57 -32.5 0)
 
 
     
@@ -4142,7 +4142,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -51.75 0)
+      (at 57 -51.5 0)
 
 
     
@@ -4175,7 +4175,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -70.75 0)
+      (at 57 -70.5 0)
 
 
     
@@ -4208,7 +4208,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 57 -89.75 0)
+      (at 57 -89.5 0)
 
 
     
@@ -4241,7 +4241,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -26.75 0)
+      (at 76 -26.5 0)
 
 
     
@@ -4274,7 +4274,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -45.75 0)
+      (at 76 -45.5 0)
 
 
     
@@ -4307,7 +4307,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -64.75 0)
+      (at 76 -64.5 0)
 
 
     
@@ -4340,7 +4340,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 76 -83.75 0)
+      (at 76 -83.5 0)
 
 
     
@@ -4373,7 +4373,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -22.75 0)
+      (at 95 -22.5 0)
 
 
     
@@ -4406,7 +4406,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -41.75 0)
+      (at 95 -41.5 0)
 
 
     
@@ -4439,7 +4439,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -60.75 0)
+      (at 95 -60.5 0)
 
 
     
@@ -4472,7 +4472,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 95 -79.75 0)
+      (at 95 -79.5 0)
 
 
     
@@ -4505,7 +4505,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 41.8061906 -8.214801 -5)
+      (at 41.7844017 -7.9657523 -5)
 
 
     
@@ -4538,7 +4538,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 62.6752764 -5.439923800000001 -10)
+      (at 62.6318644 -5.1937219 -10)
 
 
     
@@ -4571,7 +4571,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 83.13041940000001 -0.761128600000001 -15)
+      (at 83.0657146 -0.5196471000000003 -15)
 
 
     
@@ -4604,7 +4604,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 102.99927650000001 5.769820399999999 -20)
+      (at 102.91377150000001 6.004743499999998 -20)
 
 
     
@@ -4637,7 +4637,7 @@
 
   (module Capacitor (layer F.Cu) (tedit 5B24D78E)
 
-      (at 122.19996170000002 13.904410399999996 -25)
+      (at 122.09430720000002 14.130987299999997 -25)
 
 
     
@@ -4667,6 +4667,238 @@
           (pad 2 smd rect (at 0.48 0 -25) (size 0.56 0.62) (layers F.Cu F.Paste F.Mask) (net 42 "VCC"))
 
           )
+
+    (via
+      (at 6.4 5.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 2)
+    )
+  
+
+    (via
+      (at 6.4 -13.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 3)
+    )
+  
+
+    (via
+      (at 6.4 -32.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 4)
+    )
+  
+
+    (via
+      (at 6.4 -51.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 5)
+    )
+  
+
+    (via
+      (at 25.4 0.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 7)
+    )
+  
+
+    (via
+      (at 25.4 -18.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 8)
+    )
+  
+
+    (via
+      (at 25.4 -37.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 9)
+    )
+  
+
+    (via
+      (at 25.4 -56.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 10)
+    )
+  
+
+    (via
+      (at 44.4 -14.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 12)
+    )
+  
+
+    (via
+      (at 44.4 -33.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 13)
+    )
+  
+
+    (via
+      (at 44.4 -52.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 14)
+    )
+  
+
+    (via
+      (at 44.4 -71.25)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 15)
+    )
+  
+
+    (via
+      (at 63.4 -17.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 17)
+    )
+  
+
+    (via
+      (at 63.4 -36.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 18)
+    )
+  
+
+    (via
+      (at 63.4 -55.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 19)
+    )
+  
+
+    (via
+      (at 63.4 -74.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 20)
+    )
+  
+
+    (via
+      (at 82.4 -11.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 22)
+    )
+  
+
+    (via
+      (at 82.4 -30.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 23)
+    )
+  
+
+    (via
+      (at 82.4 -49.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 24)
+    )
+  
+
+    (via
+      (at 82.4 -68.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 25)
+    )
+  
+
+    (via
+      (at 101.4 -7.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 27)
+    )
+  
+
+    (via
+      (at 101.4 -26.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 28)
+    )
+  
+
+    (via
+      (at 101.4 -45.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 29)
+    )
+  
+
+    (via
+      (at 101.4 -64.75)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 30)
+    )
+  
+
+    (via
+      (at 46.874500499999996 7.2859163)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 31)
+    )
+  
+
+    (via
+      (at 66.3733234 10.4435408)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 32)
+    )
+  
+
+    (via
+      (at 85.430059 15.3842007)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 33)
+    )
+  
+
+    (via
+      (at 103.88300710000001 22.054138599999998)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 34)
+    )
+  
+
+    (via
+      (at 121.66105760000002 30.203784099999996)
+      (size 0.8)
+      (layers "F.Cu" "B.Cu")
+      (net 35)
+    )
+  
 
     (via
       (at -0.7 -5.325)
@@ -4901,7 +5133,7 @@
   
 
     (via
-      (at -0.48 -8.25)
+      (at -0.48 -9)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4909,7 +5141,7 @@
   
 
     (via
-      (at -0.48 -27.25)
+      (at -0.48 -28)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4917,7 +5149,7 @@
   
 
     (via
-      (at -0.48 -46.25)
+      (at -0.48 -47)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4925,7 +5157,7 @@
   
 
     (via
-      (at -0.48 -65.25)
+      (at -0.48 -66)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4933,7 +5165,7 @@
   
 
     (via
-      (at 18.52 -13.25)
+      (at 18.52 -14)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4941,7 +5173,7 @@
   
 
     (via
-      (at 18.52 -32.25)
+      (at 18.52 -33)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4949,7 +5181,7 @@
   
 
     (via
-      (at 18.52 -51.25)
+      (at 18.52 -52)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4957,7 +5189,7 @@
   
 
     (via
-      (at 18.52 -70.25)
+      (at 18.52 -71)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4965,7 +5197,7 @@
   
 
     (via
-      (at 37.52 -28.25)
+      (at 37.52 -29)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4973,7 +5205,7 @@
   
 
     (via
-      (at 37.52 -47.25)
+      (at 37.52 -48)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4981,7 +5213,7 @@
   
 
     (via
-      (at 37.52 -66.25)
+      (at 37.52 -67)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4989,7 +5221,7 @@
   
 
     (via
-      (at 37.52 -85.25)
+      (at 37.52 -86)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -4997,7 +5229,7 @@
   
 
     (via
-      (at 56.52 -31.75)
+      (at 56.52 -32.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5005,7 +5237,7 @@
   
 
     (via
-      (at 56.52 -50.75)
+      (at 56.52 -51.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5013,7 +5245,7 @@
   
 
     (via
-      (at 56.52 -69.75)
+      (at 56.52 -70.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5021,7 +5253,7 @@
   
 
     (via
-      (at 56.52 -88.75)
+      (at 56.52 -89.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5029,7 +5261,7 @@
   
 
     (via
-      (at 75.52 -25.75)
+      (at 75.52 -26.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5037,7 +5269,7 @@
   
 
     (via
-      (at 75.52 -44.75)
+      (at 75.52 -45.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5045,7 +5277,7 @@
   
 
     (via
-      (at 75.52 -63.75)
+      (at 75.52 -64.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5053,7 +5285,7 @@
   
 
     (via
-      (at 75.52 -82.75)
+      (at 75.52 -83.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5061,7 +5293,7 @@
   
 
     (via
-      (at 94.52 -21.75)
+      (at 94.52 -22.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5069,7 +5301,7 @@
   
 
     (via
-      (at 94.52 -40.75)
+      (at 94.52 -41.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5077,7 +5309,7 @@
   
 
     (via
-      (at 94.52 -59.75)
+      (at 94.52 -60.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5085,7 +5317,7 @@
   
 
     (via
-      (at 94.52 -78.75)
+      (at 94.52 -79.5)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5093,7 +5325,7 @@
   
 
     (via
-      (at 41.2408614 -7.260441)
+      (at 41.3062282 -8.007587)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5101,7 +5333,7 @@
   
 
     (via
-      (at 62.0289205 -4.538467200000001)
+      (at 62.1591567 -5.277073)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5109,7 +5341,7 @@
   
 
     (via
-      (at 82.4079559 0.08056409999999836)
+      (at 82.60207020000001 -0.6438803000000011)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5117,7 +5349,7 @@
   
 
     (via
-      (at 102.20620390000002 6.545343299999999)
+      (at 102.462719 5.840573799999998)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -5125,7 +5357,7 @@
   
 
     (via
-      (at 121.34231570000001 14.607861399999997)
+      (at 121.65927940000002 13.928130599999998)
       (size 0.56)
       (layers "F.Cu" "B.Cu")
       (net 43)
@@ -6118,7 +6350,7 @@
 
 
     
-    (property "Reference" _63
+    (property "Reference" _92
       (at 0 0) 
       (layer F.SilkS) 
       hide
@@ -6158,7 +6390,7 @@
 
 
     
-    (property "Reference" _64
+    (property "Reference" _93
       (at 0 0) 
       (layer F.SilkS) 
       hide
@@ -6198,7 +6430,7 @@
 
 
     
-    (property "Reference" _65
+    (property "Reference" _94
       (at 0 0) 
       (layer F.SilkS) 
       hide
