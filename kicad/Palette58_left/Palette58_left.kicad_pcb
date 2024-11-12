@@ -4900,6 +4900,238 @@
     )
   
 
+    (via
+      (at -0.48 -8.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at -0.48 -27.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at -0.48 -46.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at -0.48 -65.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 18.52 -13.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 18.52 -32.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 18.52 -51.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 18.52 -70.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 37.52 -28.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 37.52 -47.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 37.52 -66.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 37.52 -85.25)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 56.52 -31.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 56.52 -50.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 56.52 -69.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 56.52 -88.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 75.52 -25.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 75.52 -44.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 75.52 -63.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 75.52 -82.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 94.52 -21.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 94.52 -40.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 94.52 -59.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 94.52 -78.75)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 41.2408614 -7.260441)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 62.0289205 -4.538467200000001)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 82.4079559 0.08056409999999836)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 102.20620390000002 6.545343299999999)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
+    (via
+      (at 121.34231570000001 14.607861399999997)
+      (size 0.56)
+      (layers "F.Cu" "B.Cu")
+      (net 43)
+    )
+  
+
         
       (module nice!nanov2 (layer F.Cu) (tedit 5B307E4C)
       (at 119.5 -63 -90)
@@ -5886,7 +6118,7 @@
 
 
     
-    (property "Reference" _34
+    (property "Reference" _63
       (at 0 0) 
       (layer F.SilkS) 
       hide
@@ -5926,7 +6158,7 @@
 
 
     
-    (property "Reference" _35
+    (property "Reference" _64
       (at 0 0) 
       (layer F.SilkS) 
       hide
@@ -5966,7 +6198,7 @@
 
 
     
-    (property "Reference" _36
+    (property "Reference" _65
       (at 0 0) 
       (layer F.SilkS) 
       hide

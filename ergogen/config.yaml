@@ -283,8 +283,8 @@ pcbs:
       hotswap_diode_vias:
         what: covered_via
         where: 
-          - matrix
-          - thumb
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [6.40, -5.75]
           resist: true
@@ -304,8 +304,8 @@ pcbs:
       per_key_rgb_capacitor_ground_vias:
         what: covered_via
         where: 
-          - matrix
-          - thumb
+          - /^matrix_.*/
+          - /^thumb_.*/
         adjust:
           shift: [-0.48, 8.25]
           resist: true
