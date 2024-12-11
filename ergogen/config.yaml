@@ -167,6 +167,7 @@ outlines:
         shift: [(mirror_distance), ky/2+border_padding]
       fillet: 5
   cutouts:
+    # Under controller battery cable cutout
     - what: polygon
       operation: add
       points:
@@ -191,29 +192,30 @@ outlines:
         - ref: mirror_matrix_inner_num
           shift: [21, -1]
       fillet: 0.5
+      # Handles
     - what: polygon
       operation: add
       points:
         - ref: matrix_inner_home
-          shift: [10, -0.5]
+          shift: [11, -0.5]
         - ref: matrix_inner_home
           shift: [31, -0.5]
         - ref: matrix_inner_bottom
           shift: [31, -21]
         - ref: matrix_inner_bottom
-          shift: [10, -12.5]
+          shift: [11, -12.5]
       fillet: 7.5
     - what: polygon
       operation: add
       points:
         - ref: mirror_matrix_inner_home
-          shift: [10, -0.5]
+          shift: [11, -0.5]
         - ref: mirror_matrix_inner_home
           shift: [31, -0.5]
         - ref: mirror_matrix_inner_bottom
           shift: [31, -21]
         - ref: mirror_matrix_inner_bottom
-          shift: [10, -12.5]
+          shift: [11, -12.5]
       fillet: 7.5
   combo:
     - name: outer_left
@@ -258,28 +260,6 @@ pcbs:
           SMD: true
           from: "{{colrow}}"
           to: "{{row_net}}"
-      per_key_rgb:
-        what: XL-1615RGBC-WS2812B
-        where: 
-          - /^matrix_.*/
-          - /^thumb_.*/
-        adjust:
-          shift: [0,5.75]
-          resist: true
-        params:
-          din: ""
-          dout: ""
-      per_key_rgb_decoupling_capacitors:
-        what: ceramic_capacitor
-        where: 
-          - /^matrix_.*/
-          - /^thumb_.*/
-        adjust:
-          shift: [0, 9]
-        params:
-          value: "100nF"
-          left: "GND"
-          right: "VCC"
       hotswap_diode_vias:
         what: covered_via
         where: 
@@ -290,28 +270,6 @@ pcbs:
           resist: true
         params:
           net: "{{colrow}}"
-      per_key_led_ground_vias:
-        what: covered_via
-        where: 
-          - /^matrix_.*/
-          - /^thumb_.*/
-        adjust:
-          shift: [-0.7, 5.325]
-          resist: true
-        params:
-          size: 0.65
-          net: "GND"
-      per_key_rgb_capacitor_ground_vias:
-        what: covered_via
-        where: 
-          - /^matrix_.*/
-          - /^thumb_.*/
-        adjust:
-          shift: [-0.48, 9]
-          resist: true
-        params:
-          size: 0.56
-          net: "GND"
       nice!nano_left:
         what: nice!nano_v2
         params:
@@ -322,35 +280,25 @@ pcbs:
           P115: "col_4"
           P113: "col_5"
           P111: "col_6"
-          P017: "row_1"
-          P020: "row_2"
-          P022: "row_3"
-          P024: "row_4"
-          P100: "row_5"
-          P104: "SCL"
-          P106: "SDA"
+          P022: "row_1"
+          P024: "row_2"
+          P100: "row_3"
+          P011: "row_4"
+          P104: "row_5"
+          P020: "SCL"
+          P017: "SDA"
           BPLUS: "B+"
           BMINUS: "GND"
         where: matrix_inner_num
         adjust:
           shift: [24.5, -7.5]
           rotate: -90
-      rgb_din_resistor_left:
-        what: resistor
-        where: matrix_inner_num
-        adjust:
-          shift: [12.5, 8.25]
-          rotate: 0
-        params:
-          value: "330Ω"
-          left: ""
-          right: ""
       oled_left:
         what: oled
         where: matrix_inner_num
         adjust:
-          shift: [30.5, -23.5]
-          rotate: -90
+          shift: [18.5, -26.5]
+          rotate: 90
         params:
           SDA: "SDA"
           SCL: "SCL"
@@ -374,42 +322,21 @@ pcbs:
           from: "B+"
           right: "JST+"
           left: ""
-      charging_diode_left:
-        what: combo_diode
-        adjust:
-          ref: matrix_inner_num
-          shift: [13, -26.5]
-          rotate: 0
-        params:
-          value: "1N5819"
-          SMD: true
-          from: "B+"
-          to: "JST+"
       reset_switch_left:
         what: push_switch
         where: matrix_inner_num
         adjust:
-          shift: [35, -30]
+          shift: [34, -31]
           rotate: 90
         params:
           value: "TS-1187A-B-A-B"
           A: "RST"
           B: "GND"
-      reset_pull_up_resistor_left:
-        what: resistor
-        where: matrix_inner_num
-        adjust:
-          shift: [30, -30]
-          rotate: 90
-        params:
-          value: "10kΩ"
-          left: "VCC"
-          right: "RST"
       mounting_hole_inner_top:
         what: MountingHole_3_2mm_M3_Pad_Via
         where: matrix_inner_num
         adjust:
-          shift: [-8, 11.5]
+          shift: [-8, 11]
       mounting_hole_inner_bottom:
         what: MountingHole_3_2mm_M3_Pad_Via
         where: matrix_inner_bottom
@@ -424,7 +351,7 @@ pcbs:
         what: MountingHole_3_2mm_M3_Pad_Via
         where: matrix_pinky_num
         adjust:
-          shift: [4, 15.5]
+          shift: [4, 14.5]
       tooling_hole_outer_top:
         what: jlcpcb_tooling_hole
         where: matrix_outer_num
@@ -440,217 +367,217 @@ pcbs:
         where: thumb_inner_cluster
         adjust:
           shift: [8.5, -8.5]
-  Palette58_right:
-    outlines:
-      main:
-        outline: board_right
-    footprints:
-      gateron_low_profile_hotswap:
-        what: gateron_low_profile
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        params:
-          keycaps: true
-          reverse: false
-          hotswap: true
-          from: "{{column_net}}"
-          to: "{{colrow}}"
-      diodes:
-        what: combo_diode
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [8.25, 0]
-          rotate: -90
-          resist: true
-        params:
-          value: "1N4148"
-          SMD: true
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-      per_key_rgb:
-        what: XL-1615RGBC-WS2812B
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [0,5.75]
-          resist: true
-        params:
-          din: ""
-          dout: ""
-      per_key_rgb_decoupling_capacitors:
-        what: ceramic_capacitor
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [0, 9]
-        params:
-          value: "100nF"
-          left: "GND"
-          right: "VCC"
-      hotswap_diode_vias:
-        what: covered_via
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [6.40, -5.75]
-          resist: true
-        params:
-          net: "{{colrow}}"
-      per_key_led_ground_vias:
-        what: covered_via
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [-0.7, 5.325]
-          resist: true
-        params:
-          size: 0.65
-          net: "GND"
-      per_key_rgb_capacitor_ground_vias:
-        what: covered_via
-        where: 
-          - /^mirror_matrix_.*/
-          - /^mirror_thumb_.*/
-        adjust:
-          shift: [-0.48, 9]
-          resist: true
-        params:
-          size: 0.56
-          net: "GND"
-      nice!nano_right:
-        what: nice!nano_v2
-        params:
-          orientation: "down"
-          P031: "col_1"
-          P029: "col_2"
-          P002: "col_3"
-          P115: "col_4"
-          P113: "col_5"
-          P111: "col_6"
-          P017: "row_1"
-          P020: "row_2"
-          P022: "row_3"
-          P024: "row_4"
-          P100: "row_5"
-          P104: "SCL"
-          P106: "SDA"
-          BPLUS: "B+"
-          BMINUS: "GND"
-        where:
-          ref: mirror_matrix_inner_num
-        adjust:
-          shift: [24.5, -7.5]
-          rotate: 90
-          # resist: true
-      rgb_din_resistor_right:
-        what: resistor
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [12.5, 8.25]
-          rotate: 0
-        params:
-          value: "330Ω"
-          left: ""
-          right: ""
-      oled_right:
-        what: oled
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [30.5-12, -23.5]
-          rotate: 90
-        params:
-          SDA: "SDA"
-          SCL: "SCL"
-      jstph_right:
-        what: jstph
-        adjust:
-          ref: mirror_matrix_inner_num
-          shift: [12.5, -30.5]
-          rotate: 90
-        params:
-          pos: "JST+"
-          neg: "GND"
-      power_switch_right:
-        what: toggle_switch
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [21, -36.5]
-          rotate: 180
-        params:
-          value: "MSK12C02-HB"
-          from: "B+"
-          right: "JST+"
-          left: ""
-      charging_diode_right:
-        what: combo_diode
-        adjust:
-          ref: mirror_matrix_inner_num
-          shift: [13, -26.5]
-          rotate: 180
-        params:
-          value: "1N5819"
-          SMD: true
-          from: "B+"
-          to: "JST+"
-      reset_switch_right:
-        what: push_switch
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [35, -30]
-          rotate: 90
-        params:
-          value: "TS-1187A-B-A-B"
-          A: "RST"
-          B: "GND"
-      reset_pull_up_resistor_right:
-        what: resistor
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [30, -30]
-          rotate: -90
-        params:
-          value: "10kΩ"
-          left: "VCC"
-          right: "RST"
-      mounting_hole_inner_top:
-        what: MountingHole_3_2mm_M3_Pad_Via
-        where: mirror_matrix_inner_num
-        adjust:
-          shift: [-8, 11.5]
-      mounting_hole_inner_bottom:
-        what: MountingHole_3_2mm_M3_Pad_Via
-        where: mirror_matrix_inner_bottom
-        adjust:
-          shift: [5.4, -13.5]
-      mounting_hole_outer_bottom:
-        what: MountingHole_3_2mm_M3_Pad_Via
-        where: mirror_matrix_pinky_bottom
-        adjust:
-          shift: [-5.5, -12.5]
-      mounting_hole_outer_top:
-        what: MountingHole_3_2mm_M3_Pad_Via
-        where: mirror_matrix_pinky_num
-        adjust:
-          shift: [4, 15.5]
-      tooling_hole_outer_top:
-        what: jlcpcb_tooling_hole
-        where: mirror_matrix_outer_num
-        adjust:
-          shift: [-8.5, 8.5]
-      tooling_hole_outer_bottom:
-        what: jlcpcb_tooling_hole
-        where: mirror_matrix_outer_bottom
-        adjust:
-          shift: [-8.5, -8.5]
-      tooling_hole_inner_bottom:
-        what: jlcpcb_tooling_hole
-        where: mirror_thumb_inner_cluster
-        adjust:
-          shift: [8.5, -8.5]
+  # Palette58_right:
+  #   outlines:
+  #     main:
+  #       outline: board_right
+  #   footprints:
+  #     gateron_low_profile_hotswap:
+  #       what: gateron_low_profile
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       params:
+  #         keycaps: true
+  #         reverse: false
+  #         hotswap: true
+  #         from: "{{column_net}}"
+  #         to: "{{colrow}}"
+  #     diodes:
+  #       what: combo_diode
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [8.25, 0]
+  #         rotate: -90
+  #         resist: true
+  #       params:
+  #         value: "1N4148"
+  #         SMD: true
+  #         from: "{{colrow}}"
+  #         to: "{{row_net}}"
+  #     per_key_rgb:
+  #       what: XL-1615RGBC-WS2812B
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [0,5.75]
+  #         resist: true
+  #       params:
+  #         din: ""
+  #         dout: ""
+  #     per_key_rgb_decoupling_capacitors:
+  #       what: ceramic_capacitor
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [0, 9]
+  #       params:
+  #         value: "100nF"
+  #         left: "GND"
+  #         right: "VCC"
+  #     hotswap_diode_vias:
+  #       what: covered_via
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [6.40, -5.75]
+  #         resist: true
+  #       params:
+  #         net: "{{colrow}}"
+  #     per_key_led_ground_vias:
+  #       what: covered_via
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [-0.7, 5.325]
+  #         resist: true
+  #       params:
+  #         size: 0.65
+  #         net: "GND"
+  #     per_key_rgb_capacitor_ground_vias:
+  #       what: covered_via
+  #       where: 
+  #         - /^mirror_matrix_.*/
+  #         - /^mirror_thumb_.*/
+  #       adjust:
+  #         shift: [-0.48, 9]
+  #         resist: true
+  #       params:
+  #         size: 0.56
+  #         net: "GND"
+  #     nice!nano_right:
+  #       what: nice!nano_v2
+  #       params:
+  #         orientation: "down"
+  #         P031: "col_1"
+  #         P029: "col_2"
+  #         P002: "col_3"
+  #         P115: "col_4"
+  #         P113: "col_5"
+  #         P111: "col_6"
+  #         P017: "row_1"
+  #         P020: "row_2"
+  #         P022: "row_3"
+  #         P024: "row_4"
+  #         P100: "row_5"
+  #         P104: "SCL"
+  #         P106: "SDA"
+  #         BPLUS: "B+"
+  #         BMINUS: "GND"
+  #       where:
+  #         ref: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [24.5, -7.5]
+  #         rotate: 90
+  #         # resist: true
+  #     rgb_din_resistor_right:
+  #       what: resistor
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [12.5, 8.25]
+  #         rotate: 0
+  #       params:
+  #         value: "330Ω"
+  #         left: ""
+  #         right: ""
+  #     oled_right:
+  #       what: oled
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [30.5-12, -23.5]
+  #         rotate: 90
+  #       params:
+  #         SDA: "SDA"
+  #         SCL: "SCL"
+  #     jstph_right:
+  #       what: jstph
+  #       adjust:
+  #         ref: mirror_matrix_inner_num
+  #         shift: [12.5, -30.5]
+  #         rotate: 90
+  #       params:
+  #         pos: "JST+"
+  #         neg: "GND"
+  #     power_switch_right:
+  #       what: toggle_switch
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [21, -36.5]
+  #         rotate: 180
+  #       params:
+  #         value: "MSK12C02-HB"
+  #         from: "B+"
+  #         right: "JST+"
+  #         left: ""
+  #     charging_diode_right:
+  #       what: combo_diode
+  #       adjust:
+  #         ref: mirror_matrix_inner_num
+  #         shift: [13, -26.5]
+  #         rotate: 180
+  #       params:
+  #         value: "1N5819"
+  #         SMD: true
+  #         from: "B+"
+  #         to: "JST+"
+  #     reset_switch_right:
+  #       what: push_switch
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [35, -30]
+  #         rotate: 90
+  #       params:
+  #         value: "TS-1187A-B-A-B"
+  #         A: "RST"
+  #         B: "GND"
+  #     reset_pull_up_resistor_right:
+  #       what: resistor
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [30, -30]
+  #         rotate: -90
+  #       params:
+  #         value: "10kΩ"
+  #         left: "VCC"
+  #         right: "RST"
+  #     mounting_hole_inner_top:
+  #       what: MountingHole_3_2mm_M3_Pad_Via
+  #       where: mirror_matrix_inner_num
+  #       adjust:
+  #         shift: [-8, 11.5]
+  #     mounting_hole_inner_bottom:
+  #       what: MountingHole_3_2mm_M3_Pad_Via
+  #       where: mirror_matrix_inner_bottom
+  #       adjust:
+  #         shift: [5.4, -13.5]
+  #     mounting_hole_outer_bottom:
+  #       what: MountingHole_3_2mm_M3_Pad_Via
+  #       where: mirror_matrix_pinky_bottom
+  #       adjust:
+  #         shift: [-5.5, -12.5]
+  #     mounting_hole_outer_top:
+  #       what: MountingHole_3_2mm_M3_Pad_Via
+  #       where: mirror_matrix_pinky_num
+  #       adjust:
+  #         shift: [4, 15.5]
+  #     tooling_hole_outer_top:
+  #       what: jlcpcb_tooling_hole
+  #       where: mirror_matrix_outer_num
+  #       adjust:
+  #         shift: [-8.5, 8.5]
+  #     tooling_hole_outer_bottom:
+  #       what: jlcpcb_tooling_hole
+  #       where: mirror_matrix_outer_bottom
+  #       adjust:
+  #         shift: [-8.5, -8.5]
+  #     tooling_hole_inner_bottom:
+  #       what: jlcpcb_tooling_hole
+  #       where: mirror_thumb_inner_cluster
+  #       adjust:
+  #         shift: [8.5, -8.5]
