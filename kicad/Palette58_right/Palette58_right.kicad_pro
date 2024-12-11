@@ -631,19 +631,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "VCC"
+        "pattern": "B+"
       },
       {
         "netclass": "Default",
         "pattern": "GND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "100nF"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B+"
       },
       {
         "netclass": "Default",
@@ -655,6 +647,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
         "pattern": "P0.10"
       },
       {
@@ -663,7 +659,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "SDA"
+        "pattern": "P1.06"
       },
       {
         "netclass": "Default",
@@ -671,7 +667,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "P0.11"
+        "pattern": "SDA"
       },
       {
         "netclass": "Default",
@@ -695,10 +691,6 @@
       },
       {
         "netclass": "Default",
-        "pattern": "330Ω"
-      },
-      {
-        "netclass": "Default",
         "pattern": "JST+"
       },
       {
@@ -707,15 +699,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "1N5819"
-      },
-      {
-        "netclass": "Default",
         "pattern": "TS-1187A-B-A-B"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "10kΩ"
       }
     ]
   },
